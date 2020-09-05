@@ -2,6 +2,8 @@
 
 namespace Nadybot\User\Modules;
 
+use Nadybot\Core\Nadybot;
+
 /**
  * Authors:
  *  - Nadyita (RK5)
@@ -15,6 +17,9 @@ class WatchdogController {
 	 * Set automatically by module loader.
 	 */
 	public string $moduleName;
+
+	/** @Inject */
+	public Nadybot $chatBot;
 
 	/**
 	 * @Event("timer(10sec)")
